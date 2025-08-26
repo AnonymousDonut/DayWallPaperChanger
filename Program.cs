@@ -60,12 +60,13 @@ void ChangeWallpaper()
         key.SetValue("WallpaperStyle", "10");
         key.SetValue("TileWallpaper", "0");
         
-        // This is all just ai garbage btw
+        // changing the wallpaper part is ai :sob: (i do not know shit about user32.dll)
     }
     if (!SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, $@"{DaysDir}\{WallpaperForDay()}.png", SPIF_UPDATEINIFILE | SPIF_SENDCHANGE))
     {
         throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error(), "Failed to change wallpaper");
     }
 }
+
 
 ChangeWallpaper();
