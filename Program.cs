@@ -20,6 +20,10 @@ if (!Directory.Exists(DaysDir))
     Console.WriteLine("Directory doesn't exist");
 }
 
+else
+{
+    ChangeWallpaper();
+}
 
 void ChangeWallpaper()
 {
@@ -36,5 +40,3 @@ void ChangeWallpaper()
     }
 }
 
-
-ChangeWallpaper();
