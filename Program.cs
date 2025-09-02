@@ -8,6 +8,9 @@ const int SPI_SETDESKWALLPAPER = 0x0014;
 const int SPIF_UPDATEINIFILE = 0x01;
 const int SPIF_SENDCHANGE = 0x02;
 
+Console.Title = "DayWallPaperChanger";
+Console.WriteLine("This is DayWallPaperChanger so don't be afraid of the popup!");
+
 var Dir = AppDomain.CurrentDomain.BaseDirectory;
 var DaysDir = Path.Combine(Dir, "Days");
 var theday = DateTime.Today.DayOfWeek.ToString();
