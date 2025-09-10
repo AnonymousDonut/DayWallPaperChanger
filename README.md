@@ -3,8 +3,7 @@
 ### Best to put this in startup
 Directory should look like this
 
-SomeFolder 
-[
-  DayWallPaperChanger.exe
-  Days
-]
+(the folder containing the exe and folder can be named anything)
+DayWallPaperChanger/
+│  DayWallPaperChanger.exe
+├ Days
